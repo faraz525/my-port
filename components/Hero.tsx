@@ -23,7 +23,7 @@ export default function Hero({}: Props) {
             <BackGroundCircle/>
         </div>
         <Image className='relative rounded-full h-32 w-32 mx-auto object-cover'
-            src="/../public/Headshot.jpeg"
+            src="/Headshot.jpeg"
             alt="Picture of the author"
             width={500}
             height={500}

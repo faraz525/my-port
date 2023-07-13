@@ -6,6 +6,7 @@ import About from '../components/About'
 import WorkExperince from '../components/WorkExperince'
 import Skills from '../components/Skills'
 import ContactMe from '../components/ContactMe'
+import Entrepreneurship from '../components/Entrepreneurship'
 import Link from 'next/link'
 import { HomeIcon } from '@heroicons/react/24/solid'
 
@@ -40,6 +41,10 @@ export default function Home() {
 
       <section id="experince" className='snap-center'>
         <WorkExperince />
+      </section>
+
+      <section id="entrepreneurship" className='snap-center'>
+        <Entrepreneurship />
       </section>
 
       {/* <section id="skills" className='snap-start'>

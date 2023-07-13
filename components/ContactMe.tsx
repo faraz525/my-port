@@ -24,7 +24,7 @@ function ContactMe({}: Props) {
     max-w-7xl px-10 justify-evenly mx-auto items-center'>
         <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'> Contact Me</h3>
         <div className='flex flex-col space-y-10'>
-          <h4 className='text-4xl font-semibold text-center'>Want to get in touch? <span className='underline 
+          <h4 className='text-4xl font-semibold text-center mt-20'>Want to get in touch? <span className='underline 
             decoration-[#800080]'>Let's Talk</span></h4>
 
            <div className='space-y-10'>

@@ -34,12 +34,12 @@ function About({}: Props) {
         viewport={{
             once: true,
         }}
-        className="flex-shrink-0"
+        className="flex-shrink-0 mt-24"
         >
 
         <Image className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
         md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]' 
-            src="/../public/headshot2.jpeg"
+            src="/headshot2.jpeg"
             alt="Picture of the author"
             width={500}
             height={500}
@@ -48,7 +48,7 @@ function About({}: Props) {
         
         <div className='space-y-10 px-0 md:px-10'>
             <h4 className='text-4xl font-semibold'>Some <span className='underline 
-            decoration-[#800080]'>background</span> about me!</h4>
+            decoration-[#800080] mt-24'>background</span> about me!</h4>
 
             <p className='text-base'>
             Hi! 👋 My name is Faraz Qureshi and I am a social entrepreneur looking to use my skills in 

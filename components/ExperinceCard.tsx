@@ -6,20 +6,20 @@ type Props = {
   role: string,
   company: string,
   date : string,
-  p1: string,
-  p2: string,
-  p3: string,
-  p4: string,
-  p5: string,
+  p1?: string,
+  p2?: string,
+  p3?: string,
+  p4?: string,
+  p5?: string,
   picture: string,
 }
 
 function ExperinceCard(props: Props) {
   return (
-    <article className='flex flex-col rounded-lg items-center space-xy-7 flex-shrink-0
-    w-[500px] md:w-[600px] xl:w-[900px] snap-start bg-[#292929] p-10 hover:opacity-100
+    <article className='flex flex-col rounded-lg space-y-7 flex-shrink-0
+    w-full md:w-1/2 xl:w-1/3 snap-start bg-[#292929] p-10 hover:opacity-100
     opacity-70 cursor-pointer transition-opacity duration-200 overflow-hidden'>
-      <motion.div 
+      <motion.div className='self-center'
         initial={{
           y: -100,
           opacity: 0,
@@ -43,7 +43,7 @@ function ExperinceCard(props: Props) {
         />  
       </motion.div>
 
-      <div className='px-0 md:px-10'>
+      <div className='px-0 md:px-10 self-start overflow-y-auto'>
         <h4 className='text-4xl font-light'>
           {props.role}
         </h4>
@@ -54,16 +54,11 @@ function ExperinceCard(props: Props) {
         <p className='uppercase py-5 text-gray-300'>{props.date}</p>
 
         <ul className='list-disc space-y-4 ml-5 text-lg'>
-          <li>{props.p1}
-          </li>
-          <li>{props.p2}
-          </li>
-          <li>{props.p3}
-          </li>
-          <li>{props.p4}
-          </li>
-          <li>{props.p5}
-          </li>
+          {props.p1 && <li>{props.p1}</li>}
+          {props.p2 && <li>{props.p2}</li>}
+          {props.p3 && <li>{props.p3}</li>}
+          {props.p4 && <li>{props.p4}</li>}
+          {props.p5 && <li>{props.p5}</li>}
         </ul>
       </div>
     </article>
