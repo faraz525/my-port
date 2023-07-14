@@ -21,11 +21,13 @@ function ContactMe({}: Props) {
 
   return (
     <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row
-    max-w-7xl px-10 justify-evenly mx-auto items-center'>
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'> Contact Me</h3>
-        <div className='flex flex-col space-y-10'>
-          <h4 className='text-4xl font-semibold text-center mt-20'>Want to get in touch? <span className='underline 
-            decoration-[#800080]'>Let's Talk</span></h4>
+max-w-screen px-10 justify-evenly mx-auto items-center'>
+    <div className='absolute top-24 left-0 right-0'>
+      <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl text-center'> Contact Me</h3>
+    </div>
+    <div className='flex flex-col space-y-10 pt-32'>
+      <h4 className='text-4xl font-semibold text-center'>Want to get in touch? <span className='underline 
+        decoration-[#800080]'>Let's Talk</span></h4>
 
            <div className='space-y-10'>
             <div className='flex items-center space-x-5 justify-center'>
@@ -42,8 +44,8 @@ function ContactMe({}: Props) {
             </div>
            </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'> 
-            <div className='flex space-x-2'>
+          <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-full md:w-fit mx-auto'> 
+            <div className='flex flex-wrap space-x-0 md:space-x-2'>
               <input { ...register('name')}placeholder='Name' className="contactInput" type="text"/>
               <input { ...register('email')} placeholder='Email' className="contactInput" type="email"/>
             </div>

@@ -54,7 +54,7 @@ const WorkExperince = (props: Props) => {
             once: true
         }}
         className='h-screen flex relative flex-col text-lft
-        max-w-full justify-evenly mx-auto items-center overflow-hidden px-10'>
+        max-w-full justify-evenly mx-auto items-center overflow-hidden md:px-10'>
             <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl mb-5 mt-24'>Experince</h3>
 
             <div className='scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#800080]/80 w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>

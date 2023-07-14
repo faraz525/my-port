@@ -37,8 +37,8 @@ function About({}: Props) {
         className="flex-shrink-0 mt-24"
         >
 
-        <Image className='md:-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-            md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]' 
+        <Image className='mt-24 md:-mb-20 md:mt-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
+  md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]' 
             src="/headshot2.jpeg"
             alt="Picture of the author"
             width={500}
@@ -46,7 +46,7 @@ function About({}: Props) {
         />  
         </motion.div>
         
-        <div className='space-y-10 px-0 md:px-10'>
+        <div className='space-y-10 px-0 md:px-10 overflow-y-auto max-h-screen'>
             <h4 className='text-4xl font-semibold'>Some <span className='underline 
             decoration-[#800080] mt-24'>background</span> about me!</h4>
 
@@ -57,7 +57,7 @@ function About({}: Props) {
             and a non-profit I formed to fight the stigma against students with special needs. Now, I have 
             been able to refine my programming knowledge through SWE internships and have been working on my 
             company cledge - looking to democratize the college advising space - for the past year. Scroll 
-            down to learn more about my journey 🛤️ and feel free to contact me with any questions!
+            down to learn more about my journey 🛤️ and contact me!
             </p>
         </div>
         
