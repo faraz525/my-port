@@ -24,11 +24,10 @@ const Entrepreneurship = (props: Props) => {
             role: 'Co-Founder & CTO',
             company: 'Aware Non-profit',
             date: 'September 2018 – September 2020',
-            p1: 'Launched Cledge to tackle inequity in the college consulting industry and revolutionize college advising.',
-            p2: 'Won #1 at Dempsey Startup Competition, Microsoft for Startups company, IBM Startups, and MassChallange accelerator, reaching a community of 2,000+ parents/students.',
-            p3: 'Directed and collaborated with a team of 12 developers to develop web solutions using Typescript, React, NextJS, and MongoDB',
-            p4: 'Involved in agile framework, design specification, tech integration, product review, and go to market pipeline.',
-            picture: '/tesla_logo_PNG19.png',
+            p1: 'Helped found a non-profit to fight the stigma against students with special needs via high school chapters',
+            p2: 'Raised $35,000 in funding, recognized from T-Mobile, Ashoka Her Lead Fellowship, and more for our work.',
+            p3: 'Created website for an online presence and was able to reach over 8,000 individuals from Oregon to Florida',
+            picture: '/aware.jpeg',
           },
       ]
   return (

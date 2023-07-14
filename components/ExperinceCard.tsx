@@ -17,7 +17,7 @@ type Props = {
 function ExperinceCard(props: Props) {
   return (
     <article className='flex flex-col rounded-lg space-y-7 flex-shrink-0
-    w-full md:w-1/2 xl:w-1/3 snap-start bg-[#292929] p-10 hover:opacity-100
+    w-full md:w-full xl:w-1/2 snap-start bg-[#292929] p-5 hover:opacity-100
     opacity-70 cursor-pointer transition-opacity duration-200 overflow-hidden'>
       <motion.div className='self-center'
         initial={{
@@ -34,12 +34,12 @@ function ExperinceCard(props: Props) {
         viewport={{once: true}}
         >
       
-        <Image className='w-32 h-32 rounded-full object-cover xl:w-[200px] xl:h-[200px]
+        <Image className='w-24 h-24 rounded-full object-cover xl:w-[200px] xl:h-[200px]
         object-center' 
             src={props.picture}
             alt="Experince cards"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
         />  
       </motion.div>
 
